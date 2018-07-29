@@ -23,7 +23,7 @@ where 3 underbars indicate a missing word. Punctuations and apostrophes should b
 
 # Requirements
   1. nltk
-  2. pytorch
+  2. torch
   3. pickle
   
 
