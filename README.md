@@ -7,7 +7,7 @@
 # Training
   Due to the data's massive size, the network is trained using only parts of the corpus from [1 Billion Word Language Model Benchmark](http://www.statmt.org/lm-benchmark/). The network is based mainly on 2 LSTM neural networks, one taking as input a left context sequence of words and the other taking a right context sequence. For example, given a context sentence < ... w1 w2 w3 ___ w5 w6 w7... >, the left LSTM processes the < .. w1 w2 w3 > sequence while the the right LSTM processes the < ... w7 w6 w5 > sequence to produce a pair of outputs that meet at the missing word's position. The the 2 outputs are then concatenated and mapped to a predicted word w4'. This algorithm can be found in LSTM_bilang_nostop_train.py
   
-  When running LSTM_bilang_nostop_train.py, the program will prompt for a directory containing your training files. It will also prompt for a name to save the model by. The program saves the model at every 10k samples checkpoint.
+  When running LSTM_bilang_nostop_train.py, the program will prompt for a directory containing your training files. It will also prompt for a name to save the model by. The program saves the model at every 10k samples checkpoint. Minimum cross-entropy loss obtained is around 3.5.
   
  ``` python LSTM_bilang_nostop_train.py ```
   
