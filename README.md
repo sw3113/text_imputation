@@ -16,7 +16,7 @@
   
 # Evaluation
   With multiple potential missing words for a given context, evaluation of the model is currently based on human judgement. Users have the option of picking the top n most likely missing words during an evaluation. To evaluate a model, run LSTM_bilang_nostop_eval.py. A pretrained model is provided in *text_imputation/models*. The program will prompt for a context. All contexts should be entered in the following form: 
-                                        ```... w1 w2 w3 ___ w5 w6 w7 .... ```
+                                           ... w1 w2 w3 ___ w5 w6 w7 ....
 where the 3 underbars indicate a missing word. Punctuations and apostrophes should be separated by space such as "don 't". 
 
 ``` python LSTM_bilang_nostop_eval.py ```
